@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <main class="weather-app">
+    <!-- =========================
+        ПОИСК ГОРОДА
+        JS:
+        - получать значение input
+        - ловить клик по кнопке
+    ========================== -->
+    <section class="search-box">
+        <!-- JS: брать значение города -->
+        <input type="text" id="cityInput" placeholder="Введите город"/>
+        <!-- JS: клик для поиска -->
+        <button id="searchBtn">Найти</button>
+    </section>
+    <!-- =========================
+        ОСНОВНАЯ КАРТОЧКА ПОГОДЫ
+    ========================== -->
+    <section class="weather-card">
+        <!-- JS: название города -->
+        <h1 id="cityName">Basel</h1>
+        <!-- JS: дата или время -->
+        <p id="currentDate"></p>
+        <!-- =========================
+            ИКОНКА ПОГОДЫ
+            JS:
+            - менять src картинки
+        ========================== -->
+        <div class="weather-icon-box">
+
+        <img
+            id="weatherIcon"
+            src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+            alt="Weather Icon"/>
+        </div>
+        <!-- =========================
+            ТЕМПЕРАТУРА
+            JS:
+            - менять температуру
+        ========================== -->
+        <h2 id="temperature">
+            22°C
+        </h2>
+
+        <!-- =========================
+            ОПИСАНИЕ ПОГОДЫ
+            JS:
+            - менять текст
+        ========================== -->
+
+        <p id="weatherDescription">
+            Солнечно
+        </p>
+        <!-- =========================
+            ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+            JS:
+            - менять влажность
+            - менять ветер
+            - менять ощущается как
+        ========================== -->
+        <div class="weather-details">
+        <div class="detail-box">
+            <p>Влажность</p>
+            <!-- JS -->
+            <span id="humidity">65%</span>
+        </div>
+        <div class="detail-box">
+            <p>Ветер</p>
+            <!-- JS -->
+            <span id="windSpeed">4 м/с</span>
+        </div>
+        <div class="detail-box">
+            <p>Ощущается как</p>
+        <!-- JS -->
+            <span id="feelsLike">24°C</span>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
