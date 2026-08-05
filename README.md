@@ -19,7 +19,6 @@ The user can enter a city name, and the application displays weather data such a
 - Fetch real-time weather data using OpenWeather API
 - Dynamic weather information display
 - Responsive design
-- Error handling for invalid cities
 
 ## 🛠️ Technologies Used
 
